@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel='stylesheet' href='./css/animations.css'>
     <script src="js/jquery.min.js"></script>
     <link type="text/css" href="./css/style.css" rel="stylesheet" />
+    <link type="text/css" href="./css/style2.css" rel="stylesheet" />
     <style>
       html,
       body {
@@ -21,6 +23,58 @@
         padding: 0;
         background-color: #000000;
       }
+
+      .text-name {
+        color: skyblue;
+      }
+
+      .is-animate.style1 > div { animation-name: style1; }
+
+.is-animate > div {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.text-hm {
+  display: inline-block;
+  
+}
+
+.label {
+  color: #d09fb7;
+}
+
+.name-hm {
+  color: skyblue;
+}
+
+.text-1{
+  position: absolute;
+    left: 40%;
+    top: 20%;
+    font-size: 3rem;
+}
+
+.text-2{
+  position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 3rem;
+}
+
+.text-3{
+  position: absolute;
+    left: 65%;
+    top: 40%;
+    font-size: 3rem;
+}
+
+.is-animate > div:nth-child(1) { animation-delay: 0.0s }
+.is-animate > div:nth-child(2) { animation-delay: 0.1s }
+.is-animate > div:nth-child(3) { animation-delay: 0.2s }
+.is-animate > div:nth-child(4) { animation-delay: 0.3s }
+.is-animate > div:nth-child(5) { animation-delay: 0.4s }
     </style>
   </head>
   <body>
@@ -28,6 +82,36 @@
       <source src="renxi.mp3" type="audio/mp3" />
     </audio>
     <div id="jsi-cherry-container" class="container">
+      <div class="centered-content text-1">
+        <div class='is-animate style1'>
+          <div class="text-hm name-hm">何</div>
+          <div class="text-hm name-hm">梦</div>
+          <div class="text-hm name-hm">最</div>
+          <div class="text-hm name-hm">瘦</div>
+          <div class="text-hm name-hm">啦</div>
+        </div>
+      </div>
+
+      <div class="centered-content text-2">
+        <div class='is-animate style1'>
+          <div class="text-hm-left name-hm">要</div>
+          <div class="text-hm-left  name-hm">记</div>
+          <div class="text-hm-left  name-hm">得</div>
+          <div class="text-hm-left  name-hm">多</div>
+          <div class="text-hm-left  name-hm">笑</div>
+        </div>
+      </div>
+
+      <div class="centered-content text-3">
+        <div class='is-animate style1'>
+          <div class="text-hm-left name-hm">你</div>
+          <div class="text-hm-left  name-hm">最</div>
+          <div class="text-hm-left  name-hm">好</div>
+          <div class="text-hm-left  name-hm">看</div>
+          <div class="text-hm-left  name-hm">啦</div>
+        </div>
+      </div>
+     
       <div class="box">
         <ul class="minbox">
           <li></li>
